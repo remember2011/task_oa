@@ -15,11 +15,12 @@
 管理员密码： **admin**<br />
 普通用户输入任意账号密码即可进入系统<br />
 
+####  该项目是我抽时间写的，疏漏不妥之处，还请不吝赐教！
 ####  欢迎来我的简书，记录了很多小程序及前端的干货。
 
-[Console.Iog](https://www.jianshu.com/u/babfea3a0f27)
+[**Console.Iog**](https://www.jianshu.com/u/babfea3a0f27)
 
-**该项目是我抽时间写的，疏漏不妥之处，还请不吝赐教！**
+
 
 ![任务列表](public/pics/task.png) ![项目截图](public/pics/user.png)
 
