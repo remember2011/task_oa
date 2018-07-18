@@ -1,0 +1,5 @@
+/* pages/add/add.wxss */
+@import '../issue/issue.wxss';
+input.dis{
+  color: rgb(146, 146, 146);
+}

@@ -1,0 +1,27 @@
+<!--pages/edit/edit.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit">
+    <view class='formitem formImg'>
+      <text class='attr'>头像</text>
+      <open-data class="avater" type="userAvatarUrl"></open-data>
+    </view>
+    <view wx:for='{{menus}}' wx:key='*this' class='formitem' bindtap='showTips'>
+      <text class='attr'>{{item.attr}}</text>
+      <input disabled='true' value='{{item.val}}'></input>
+      <text class='icon iconfont icon-right'></text>
+    </view>
+    <view class='formitem'>
+      <text class='attr'>手机号</text>
+      <input id='tel' type='number' name="tel" data-focus="{{telFocus}}" bindfocus='inputFocus' bindblur='inputBlur' value='{{myinfo.tel}}'></input>
+      <text class='icon iconfont icon-edit'></text>
+    </view>
+    <view class='formitem'>
+      <text class='attr'>邮箱</text>
+      <input id='email' name="email" data-focus="{{emailFocus}}" bindfocus='inputFocus' bindblur='inputBlur' value='{{myinfo.email}}'></input>
+      <text class='icon iconfont icon-edit'></text>
+    </view>
+    <view class="btn-area">
+      <button type='primary' formType="submit">保存</button>
+    </view>
+  </form>
+</view>

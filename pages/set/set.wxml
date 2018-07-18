@@ -1,0 +1,13 @@
+<!--pages/set/set.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit">
+    <view class='formitem' wx:for='{{menus}}' wx:key='*this'>
+      <text class='attr'>{{item.attr}}</text>
+      <input name="{{item.name}}" type='password' value='' placeholder='{{item.place}}'></input>
+      <text class='icon iconfont icon-edit'></text>
+    </view>
+    <view class="btn-area">
+      <button type='primary' formType="submit">保存</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/about/about",
+    "pages/edit/edit",
+    "pages/me/me",
+    "pages/under/under",
+    "pages/leader/leader",
+    "pages/issue/issue",
+    "pages/logs/logs",
+    "pages/tasks/tasks",
+    "pages/detail/detail",
+    "pages/person/person",
+    "pages/add/add",
+    "pages/set/set",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "HelloWorld",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  
+  "debug": true
+}

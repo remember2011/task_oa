@@ -1,0 +1,45 @@
+/* pages/person/person.wxss */
+
+.item {
+  width: 100%;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+  height: 88rpx;
+  font-size: 30rpx;
+  line-height: 86rpx;
+  background: #fff;
+  /* border-top: 1px solid #f0f0f0; */
+}
+
+.item text {
+  width: 30rpx;
+  float: right;
+}
+
+.all {
+  padding: 20rpx 0;
+  margin-bottom: 110rpx;
+  background: #f9f9f9;
+}
+
+.all .item {
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.btm {
+  width: 100%;
+  background: #fff;
+  padding: 20rpx 0;
+  position: fixed;
+  bottom: 0;
+}
+.btm navigator{
+  width: 40%;
+  margin: auto;
+}
+.btm button {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  
+}

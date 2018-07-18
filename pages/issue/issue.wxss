@@ -1,0 +1,41 @@
+/* pages/issue/issue.wxss */
+page{
+    background-color: #F8F8F8;
+    font-size: 32rpx;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page__hd {
+  text-align: center;
+  padding: 50rpx 30rpx 20rpx;
+}
+.page__title{
+  color: #7D75EA;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.page__bd {
+    padding-bottom: 80rpx;
+}
+.page__bd_spacing {
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.weui-btn-area{
+  margin-top: 70rpx;
+}
+.weui-btn-area button{
+  width: 50%;
+  line-height: 80rpx;
+  height: 80rpx;
+}
+input,textarea{
+  color: #444;
+  font-size: 30rpx;
+} 
+picker{
+  /* width: calc(100% - 60rpx);
+  height: 100%;
+  box-sizing:  border-box;
+  position: absolute;
+  z-index: 999; */
+}

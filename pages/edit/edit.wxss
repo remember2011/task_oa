@@ -1,0 +1,113 @@
+/* pages/edit/edit.wxss */
+
+page {
+  display: block;
+  min-height: 100%;
+  padding: 50rpx 30rpx;
+  box-sizing: border-box;
+  background: #e6e1dc;
+  background: linear-gradient(to bottom, #e6e1dc, #d7c5ab);
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  /* min-height: 350px; */
+  border-radius: 10rpx;
+  background: #fff;
+  padding: 10rpx 30rpx 100rpx;
+}
+
+form {
+  width: 100%;
+}
+
+.formitem {
+  display: flex;
+  padding: 40rpx 0px 8rpx 6rpx;
+  border-bottom: 1px solid #d7d7d9;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formImg {
+  overflow: hidden;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  padding-right: 6rpx;
+  position: relative;
+}
+
+.formImg .avater {
+  width: 120rpx;
+  height: 120rpx;
+  float: right;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1rpx solid #d7c5ab;
+}
+
+.formImg .cam {
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  bottom: 18rpx;
+  right: 96rpx;
+}
+
+.formitem text {
+  font-weight: bold;
+}
+
+.formitem .attr {
+  width: 104rpx;
+  font-size: 30rpx;
+  letter-spacing: 4rpx;
+  text-align-last: justify;
+}
+
+.formitem .icon {
+  color: darkgray;
+  display: block;
+  /* margin-left: -50rpx; */
+  margin-top: 4rpx;
+}
+
+.formitem input {
+  text-align: right;
+  color: darkgray;
+  margin-right: 0;
+  font-size: 32rpx;
+  margin-right: -40rpx;
+  font-weight: lighter;
+  letter-spacing: 0;
+}
+
+.formitem input[type="number"] {
+  padding-right: 36rpx;
+}
+
+.formitem input[data-focus="1"] {
+  color: #333;
+}
+
+.btn-area {
+  margin-top: 80rpx;
+}
+
+.btn-area button {
+  font-size: 30rpx;
+  width: 300rpx;
+}
+
+#qr {
+  width: 300rpx;
+  height: 300rpx;
+  position: absolute;
+  top: 60rpx;
+  left: 80rpx;
+}
+
+#tel,#email{
+  color: #333;
+}

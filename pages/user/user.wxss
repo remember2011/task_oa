@@ -1,0 +1,11 @@
+/* pages/user/user.wxss */
+@import '../edit/edit.wxss';
+.formitem input{
+  margin-right: 0;
+  font-weight: 100;
+}
+.person-btn{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}

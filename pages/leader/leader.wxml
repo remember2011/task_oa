@@ -1,0 +1,18 @@
+<!--pages/leader.wxml-->
+<view class="container">
+  <view class='userinfo'>
+    <image class='userbg' mode='widthFix' src='../../public/img/my_bg.jpg'></image>
+      <image class="userinfo-avatar" src="{{user.avatar}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{user.name}}</text>
+      <!-- <text class="small">工号: {{user.jobid}}</text> -->
+  </view>
+
+  <view class='usercard'>
+    <text class='usercard-val icon iconfont icon-home'>工号: {{user.jobid}}</text>
+    <text class='usercard-val icon iconfont icon-user'>{{user.part}} - {{user.job}}</text>
+    <text bindtap='makeCall' data-num='{{user.tel}}' class='usercard-val  icon iconfont icon-phone'>{{user.tel}}</text>
+    <text class='usercard-val  icon iconfont icon-mail'>{{user.email}}</text>    
+  </view>
+  
+</view>
+

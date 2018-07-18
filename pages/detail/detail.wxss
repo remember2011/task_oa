@@ -1,0 +1,65 @@
+/* pages/detail/detail.wxss */
+ @import '../edit/edit.wxss';
+ /* @import '../issue/issue.wxss'; */
+page{
+  background: #e9e9e9;
+  /* background: linear-gradient(to bottom , rgb(240, 235, 246) 4% , rgb(217, 212, 239) 99%); */
+}
+.container{
+  padding-bottom: 70rpx;
+}
+.formitem{
+  padding-top: 28rpx;
+  position: relative;
+}
+.formitem .attr{
+  width: unset;
+  letter-spacing: 0;
+}
+.formitem input {
+  color: #444;
+  width: 70%;
+  text-align: left;
+  margin-right: unset;
+}
+.formitem .title{
+  font-weight: bold;
+}
+.formitem.ing .title {
+  color: #7D75EA;
+}
+.formitem.done .title {
+  color: #5e8b6f;
+}
+.formitem.over .title {
+  color: #e2434b;
+}
+.formitem.overdone .title {
+  color: #f3802d;
+}
+textarea{
+  width: 70%;
+  height: auto; 
+  color: #444;
+  font-size: 30rpx;
+} 
+.formitem.my{
+  display: block;
+  border-bottom: none;
+}
+.mytxt{
+  width: 100%;
+  height: 130rpx;
+}
+.overs{
+  color: red;
+  font-size: 24rpx;
+  position: absolute;
+  right: 150rpx;
+}
+.overtime{
+  color:red;
+}
+.btn-area{
+  margin-top: 60rpx;
+}

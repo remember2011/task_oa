@@ -1,0 +1,40 @@
+<!--pages/about/about.wxml-->
+<view class="page">
+
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1">关于·ABOUT</view>
+      <view class="weui-article__section">
+        <view class="weui-article__section">
+          <view class="weui-article__h3">1.1 本小程序</view>
+          <view class="weui-article__p">
+          <text>
+            采用基础原生小程序代码编写，非常适合入门学习\r
+            开源代码未接入正式接口，数据模拟采用EasyMock\r
+            三大功能：用户管理 任务管理 个人管理 \r
+            其中用户管理仅管理员可见\r
+            [账号:admin 密码:admin]\r
+            普通用户输入任意账号密码即可登录(仅为体验)
+            
+          </text>
+            
+          </view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">1.2 作者</view>
+          <view class="weui-article__p">
+            <text>
+            Author: JaimeCheng\r
+            QQ: 403693553\r
+            Github: @JaimeCheng\r
+            Date: 2018-07-18\r
+            </text>
+            <text>
+              由于是抽时间写的，难免疏漏，如发现任何bug，欢迎指正！
+            </text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

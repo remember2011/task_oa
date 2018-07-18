@@ -1,0 +1,87 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit" report-submit>
+    <view class='formitem {{task.status == 1?"ing":task.status == 2?"done":task.status == 3?"over":"overdone"}}'>
+      <text class='attr'>任务名称</text>
+      <input class='title' disabled value='{{task.name}}'></input>
+    </view>
+     <view class='formitem'>
+      <text class='attr'>发布时间</text>
+      <input value='{{task.createtime}}' disabled ></input>
+    </view>
+    <view class='formitem'>
+      <text class='attr'>截止时间</text>
+      <input class='{{task.status == 3?"overtime":""}}' value='{{task.overtime}}' disabled></input>
+      <view wx:if='{{task.status == 3}}' class='overs' >(已逾期)</view>
+    </view>
+    <view class='formitem'  wx:if='{{task.status == 2 || task.status == 4}}'>
+      <text class='attr'>完成时间</text>
+      <input value='{{task.donetime}}' disabled></input>
+    </view>
+    <view class='formitem' wx:if='{{types == 1}}'>
+      <text class='attr'>任务来源</text>
+      <input value='{{task.sender}}' disabled></input>
+    </view>
+    <view class='formitem' wx:if='{{types == 2}}' >
+      <text class='attr'>任务对象</text>
+      <input value='{{task.receiver}}' disabled></input>
+    </view>
+    <view class='formitem'>
+      <text class='attr'>任务内容</text>
+      <textarea disabled>{{task.detail}}</textarea>
+    </view>
+    <view class='formitem my'  wx:if='{{types == 1}}'>
+      <text class='attr'>我的备注</text>
+      <textarea class='mytxt' placeholder='如有说明请在此处填写' name='mymark'></textarea>
+    </view>
+    <view class="btn-area">
+      <block wx:if='{{types == 1}}'>
+        <button wx:if='{{task.status == 1}}' type='primary' formType="submit">提交完成</button>
+        <button wx:if='{{task.status == 2}}' type='primary' disabled >已完成</button>
+        <button wx:if='{{task.status == 3}}' type='warn'  formType="submit" >提交完成</button>
+        <button wx:if='{{task.status == 4}}' type='warn' disabled >已逾期完成</button>
+      </block>
+      <block wx:if='{{types == 2}}'>
+        <button wx:if='{{task.status == 1}}' type='primary' disabled>进行中</button>
+        <button wx:if='{{task.status == 2}}' type='primary' disabled >已完成</button>
+        <button wx:if='{{task.status == 3}}' type='warn'  formType="submit" >催促</button>
+        <button wx:if='{{task.status == 4}}' type='warn' disabled >已逾期完成</button>
+      </block>
+    </view>
+  </form>
+</view>
+<!-- <view class="page__hd">
+  <view class="page__title">整理报表</view>
+</view>
+<form class="page__bd" bindsubmit="formSubmit">
+
+  <view class="weui-cells__title">截止时间</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" disabled value='7月18日' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">任务内容</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" disabled style="height: 3.3em" value='本周的财务报表分类整理写好报告发我邮箱告发我邮箱告发我邮箱' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">我的备注</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" style="height: 3.3em" placeholder='如有说明请在此处填写' />
+      </view>
+    </view>
+  </view>
+  <view class="weui-btn-area">
+    <button class="weui-btn" formType="submit" type="warn">提交完成</button>
+  </view>
+</form> -->

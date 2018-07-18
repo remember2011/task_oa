@@ -1,0 +1,21 @@
+<!--pages/under/under.wxml-->
+<view class='container'>
+  <block wx:if="{{unders.length == 0}}">
+    <view class='emptyPage'>
+      <image mode='widthFix' src='../../public/img/empty.png'></image>
+      <text>暂时还没有可管理的下级人员哦~</text>
+    </view>
+  </block>
+
+  <block wx:else>
+    <block wx:for="{{unders}}" wx:key='*this'>
+      <navigator url="../user/user?id={{item.uid}}&from={{froms}}&pid={{pid}}" class="userlist icon iconfont icon-edit">
+        <view class='hexagon'>
+          <image mode="widthFix" src='{{item.avatar || "../../public/pics/a.jpg"}}'></image>
+        </view>
+        <text class='username'>{{item.name}}</text>
+        <text class='userdesc'>{{item.part}}-{{item.job}}</text>
+      </navigator>
+    </block>
+  </block>
+</view>

@@ -1,0 +1,54 @@
+/* pages/leader.wxss */
+
+.userbg{
+  width: 100%;
+}
+.userinfo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  position: relative; 
+}
+.userinfo-nickname{
+  font-size: 36rpx;
+  font-weight: bold;
+  line-height: 100rpx;
+}
+.usercard{
+  width: 85%;
+  margin:30rpx auto;
+  border-top: 1rpx solid #f8f8f8;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.usercard text{
+  font-weight: 300;
+}
+.usercard-val{
+  display: block;
+  color: #555;
+  line-height: 90rpx;
+  font-weight: 200 !important;
+  border-bottom: 1rpx solid #E9E9E9;
+}
+.usercard-val:last-of-type{
+  border-bottom: none;
+}
+.usercard-val::before{
+  float: right;
+}
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;  
+  border-radius: 150rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #ccc;
+  margin-top: -78rpx;
+  overflow: hidden;
+}
+.small{
+  font-size: 24rpx;
+  margin-top: -20rpx;
+  color: rgb(139, 134, 134);
+}

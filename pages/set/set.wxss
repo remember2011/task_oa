@@ -1,0 +1,19 @@
+/* pages/set/set.wxss */
+@import "../edit/edit.wxss";
+
+.formitem input {
+  color: #333;
+}
+
+.formitem .attr {
+  width: 140rpx;
+}
+
+.container {
+  margin-top: 200rpx;
+  padding-bottom: 60rpx;
+}
+
+.btn-area {
+  margin-top: 60rpx;
+}

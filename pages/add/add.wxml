@@ -1,0 +1,59 @@
+<!--pages/add/add.wxml-->
+<form class="page__bd" bindsubmit="formSubmit" report-submit>
+
+  <view class="weui-cells__title">员工姓名</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" name='name' value='{{user.name}}' placeholder='请填写新员工姓名' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">部门职位</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key='{{"name"}}'>
+          <!-- <input name='pid' hidden value='{{pid}}'></input>
+          <input name='jid' hidden value='{{jid}}'></input> -->
+          <input class="weui-input"  placeholder='部门-职位' value='{{multiArray[0][multiIndex[0]]["name"]}}-{{multiArray[1][multiIndex[1]]["name"]}}' disabled/>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+  <block wx:if='{{isEdit}}'>
+    <input hidden name='uid' value='{{user.uid}}'></input>
+    <view class="weui-cells__title">工号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input dis" name='jobid' value='{{user.jobid}}' disabled/>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">手机号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name='tel' value='{{user.tel}}' placeholder='请填写手机号' />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">邮箱</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name='email' value='{{user.email}}' placeholder='请填写电子邮箱' />
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="weui-btn-area">
+    <button wx:if='{{isEdit}}' data-part='{{multiArray[0][multiIndex[0]]["name"]}}' data-job='{{multiArray[1][multiIndex[1]]["name"]}}' class="weui-btn" formType="submit" type="warn">修改信息</button>
+    <button wx:else class="weui-btn" formType="submit" type="warn">增加员工</button>
+  </view>
+</form>

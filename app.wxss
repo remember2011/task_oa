@@ -1,0 +1,36 @@
+
+/**app.wxss 小程序公共样式表**/
+
+@import "public/style/weui.wxss";
+@import "public/font/iconfont.wxss";
+
+page{
+   font-weight: 300; 
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+} 
+text{
+  color: #444;
+  font-size: 32rpx;
+}
+.emptyPage{
+  text-align: center;
+}
+.emptyPage image{
+  width: 50%;
+  display: block;
+  margin: 200rpx auto 0;
+}
+.emptyPage text{
+  color: gray;
+}
+/* userinfo  */
+
+

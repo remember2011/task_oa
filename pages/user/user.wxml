@@ -1,0 +1,22 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit" report-submit>
+    <view class='formitem formImg'>
+      <text class='attr'>头像</text>
+      <image class='avater' bindtap="chooseImage" src='{{user.avatar  || "../../public/pics/a.jpg"}}'></image>
+    </view>
+    <view wx:for='{{menus}}' wx:key='*this' class='formitem' bindtap='showTips'>
+      <text class='attr'>{{item.attr}}</text>
+      <input disabled='true' value='{{item.val}}'></input>
+    </view>
+    <view wx:if='{{froms == 1}}' class="btn-area">
+       <button type='primary' formType="submit">下发任务</button> 
+    </view>
+    <view  wx:if='{{froms == 2}}' class='btn-area person-btn'>
+      <navigator url='../add/add?uid={{uid}}' hover-class='none'>
+        <button type='warn'>修改信息</button>
+      </navigator>
+      <button type='warn' bindtap='reduce'>离职减员</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/person/person.wxml-->
+<view class='all'>
+  <navigator wx:for='{{parts}}' wx:key='*this' class='item' url='../under/under?pid={{item.pid}}' hover-class='none'>
+    {{item.pname}}
+    <text class='icon iconfont icon-right'></text>
+  </navigator>
+</view>
+
+<view class='btm'>
+  <navigator url='../add/add' hover-class='none'>
+    <button class='add' type='primary'>入职增员</button>
+  </navigator>
+</view>

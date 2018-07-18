@@ -1,0 +1,126 @@
+/* pages/me/me.wxss */
+
+.userbg{
+  width: 100%;
+}
+.userinfo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  position: relative; 
+}
+.userdesc{
+  font-size: 28rpx;
+}
+.weui-grids{
+  margin-top: 30rpx;
+}
+.weui-grid_active{
+  background: #E6E1DB;
+}
+.weui-grid__icon{
+  text-align: center;
+  color: #CDB38B;
+  font-size: 50rpx;
+}
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;  
+  border-radius: 150rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #ccc;
+  margin-top: -78rpx;
+  overflow: hidden;
+}
+.userinfo-nickname{
+  font-weight: normal;
+}
+
+.avatar{
+  width: 150rpx;
+  height: 150rpx;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+.weui-footer__link{
+  font-size: 26rpx;
+  font-weight: 300;
+}
+.maskReg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.maskReg .innerArea {
+  width: 90%;
+  /* font-family: ZoomlaXingtiJ3;    */
+  line-height: 1.5;
+  margin-bottom: 130rpx;
+  color: #fff;
+  overflow: hidden;
+  padding-top: 25rpx;
+  border-radius: 10rpx;
+}
+
+.maskReg .content {
+  font-size: 35rpx;
+  text-align: center;
+  padding: 35rpx 10rpx;
+  margin-bottom: 40rpx;
+}
+
+.maskReg .authBtn {
+  color: #fff;
+  width: 30%;
+  line-height: 2;
+  /* font-size: 32rpx; */
+  background-color: transparent;
+}
+
+.maskReg .authBtn::after, .maskReg .authBtn::before {
+  border: 2px solid #fff;
+}
+
+.btnHover {
+  animation: btnHover 0.2s;
+  -webkit-animation: btnHover 0.2s;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes btnHover {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.02);
+  }
+}
+
+@-webkit-keyframes btnHover {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.02);
+  }
+}

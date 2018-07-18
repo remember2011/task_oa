@@ -1,0 +1,93 @@
+/* pages/tasks/tasks.wxss */
+.weui-navbar__item.weui-bar__item_on {
+  color: #CDB38B;
+}
+.weui-navbar__slider {
+  width: 96rpx;
+  background-color: #CDB38B;
+}
+.weui-navbar__item .badge {
+  width: 25rpx;
+  height: 25rpx;
+  border-radius: 50%;
+  position: absolute;
+  right: 95rpx;
+  top: 30rpx;
+  text-align: center;
+  line-height: 25rpx;
+  background: #FFF;
+  border: 1rpx solid #E85555;
+}
+.weui-navbar__item .badge text{
+ color: #E85555 !important;
+ font-size: 16rpx;
+}
+
+.item{
+  width: 83%;
+  margin:25rpx auto;
+  padding: 15rpx 30rpx;
+  border-radius: 12rpx;
+  background: #F4F5FE;
+  position: relative;
+}
+.item.ing{
+  background: #F4F5FE;
+}
+.item.done{
+  background: #e5f8ea;
+}
+.item.over{
+  background: #fae3e4;
+}
+.item.overdone{
+  background: #f8e2d1;
+}
+.item .item_top{
+  display: flex;
+  font-size: 26rpx;
+  color: #9c9da5;
+  align-items: center;
+  padding-bottom: 15rpx;
+  border-bottom: 1rpx solid #EFEEF1;
+  justify-content: space-between;
+}
+.item .item_top .icon{
+  color: #7D75EA;
+}
+.item .item_top .title{
+  color: #7D75EA;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.item.ing .item_top .icon,
+.item.ing .item_top .title{
+  color: #7D75EA;
+}
+.item.done .item_top .icon,
+.item.done .item_top .title{
+  color: #5e8b6f;
+}
+.item.over .item_top .icon,
+.item.over .item_top .title{
+  color: #e2434b;
+}
+.item.overdone .item_top .icon,
+.item.overdone .item_top .title{
+  color: #f3802d;
+}
+.item .item_main{
+  color: #88888A;
+  padding: 25rpx 0 15rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item .tag{
+  width: 100rpx;
+  position: absolute;
+  top: 30rpx;
+  right: 20rpx;
+  transform: rotate(-20deg);
+}
