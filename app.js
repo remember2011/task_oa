@@ -20,7 +20,7 @@ App({
     wx.login({
       success:res=> {
         if (res.code) {
-          //用code换取openid sessionkey 在服务器做自己的用户处理
+          //用code换取openid sessionkey 在服务器可以根据用户标识来生成自定义登录态
           console.log(res.code)
         } else {
           console.log('登录失败！' + res.errMsg)
